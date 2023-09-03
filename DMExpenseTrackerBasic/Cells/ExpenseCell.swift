@@ -14,9 +14,9 @@ class ExpenseCell: UITableViewCell {
      */
     
     /**
-     11.1 Have the UILabels display the title and amount of the passed`Expense`.
+     10.2 Uncomment the following code. Have the UILabels display the title and amount of the passed`Expense`.
      */
-    func set(expense: Expense) {
-        
-    }
+//    func set(expense: Expense) {
+//
+//    }
 }

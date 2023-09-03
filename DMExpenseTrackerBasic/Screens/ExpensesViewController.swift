@@ -10,16 +10,19 @@ import UIKit
 class ExpensesViewController: UIViewController {
     
     /**
-     6.1 Connect the UITableView and UILabel to the code.
+     7.4 Create a String variable for the category and an `[Expense]` variable for the expenses.
+     7.4 Create an initializer to initialize the two variables. Refer to this article for an overview of what the initializer should look like: https://www.hackingwithswift.com/example-code/uikit/how-to-use-dependency-injection-with-storyboards.
+        Hint: In the article, the author creates an initializer for his `EditUserViewController`. The initializer accepts a coder of type `NSCoder` and a `user` of type `User`.
+            Our initializer will also accept an `NSCoder` (We have to do this because we are using storyboards. Don't worry too much about this.)
+            However, instead of a  `User`, our initializer will accept a category and an array of expenses.
      */
     
     /**
-     7.1 Create a String variable for the category and an `[Expense]` variable for the expenses.
-     7.2 Create an initializer to initialize the two variables. You may find the following article helpful: https://www.hackingwithswift.com/example-code/uikit/how-to-use-dependency-injection-with-storyboards.
+     7.6 Connect the UITableView and UILabel to the code.
      */
     
     /**
-     12.1 Call the `configureViewController` and `configureTableView` functions.
+     12.1 Call the `configureTableView` and `configureTableView` functions.
      */
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,10 +37,13 @@ class ExpensesViewController: UIViewController {
     }
     
     /**
-     10.1 We **will** be using a custom cell for this UITableView. Follow the steps in the `ExpenseCell` file.
-     10.2 Configure the tableview to display the correct data.
+     10.1 Unlike in the `CategoriesViewController`, we will be using a custom class called `ExpenseCell` to display the title of each expense and its amount. Follow the steps in the `ExpenseCell` file to create the cell.
      */
     func configureTableView() {
         
     }
+    
+    /**
+     10.3 Configure the tableview to display the correct data.
+     */
 }

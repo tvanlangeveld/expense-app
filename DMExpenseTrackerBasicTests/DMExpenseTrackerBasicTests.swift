@@ -15,7 +15,7 @@ final class DMExpenseTrackerBasicTests: XCTestCase {
                 Expense(title: "", category: "", amount: Double.random(in: 1...1000))
             }
             
-            XCTAssertEqual(ExpenseHelper.calculateTotalSpent(expenses: expenses), expenses.reduce(0) { $0 + $1.amount })
+            XCTAssertEqual(Expense.calculateTotalSpent(expenses: expenses), expenses.reduce(0) { $0 + $1.amount })
         }
     }
     
@@ -33,7 +33,7 @@ final class DMExpenseTrackerBasicTests: XCTestCase {
             }
             
             let correctExpensesByCategory = Dictionary(grouping: expenses, by: { $0.category })
-            let expensesByCategory = ExpenseHelper.getExpensesByCategory(expenses: expenses)
+            let expensesByCategory = Expense.getExpensesByCategory(expenses: expenses)
             
             XCTAssertEqual(expensesByCategory, correctExpensesByCategory)
         }
