@@ -73,14 +73,14 @@ class CategoriesViewController: UIViewController {
       
      Let's start with the first thing:
      
-     7.1 Inside `CategoriesViewController`, add the function from`UITableViewDelegate` protocol that allows us to detect when the user taps on a row. Print a message inside the function to confirm it is being called.
+     7.1 Inside `CategoriesViewController`, add the function from`UITableViewDelegate` protocol that allows us to detect when the user selects a row. Print a message inside the function to confirm it is being called.
      7.2 Add code to the function to move the user to the `ExpensesViewController`. Refer to part two of the the letter finding game for a refresher on how to do that
      7.3 Run the project and tap on a category to make sure we can transition to the next screen. **Do not move on until this works.**
      
      Now, let's move on to the second thing:
      
      7.4 Complete step 7 in `ExpensesViewController`.
-     7.5 Inside `CategoriesViewController`, modify our existing tap function to use the initializer we just created. Refer to the Hacking With Swift article for an overview of how to do this.
+     7.5 Inside `CategoriesViewController`, modify our existing select function to use the initializer we just created. Refer to the Hacking With Swift article for an overview of how to do this.
         Hint: Your code will be similar to the code from the author's `show` function.
      */
     

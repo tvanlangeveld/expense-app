@@ -18,16 +18,8 @@ class ExpensesViewController: UIViewController {
      */
     
     /**
-     7.6 Connect the UITableView and UILabel to the code.
+     8.1 Connect the UITableView and UILabel to the code.
      */
-    
-    /**
-     12.1 Call the `configureTableView` and `configureTableView` functions.
-     */
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
     
     /**
      9.1 Have the UILabel display the amount of money the user spent for the selected category. For example, "You spent $25 on entertainment.".
@@ -37,13 +29,15 @@ class ExpensesViewController: UIViewController {
     }
     
     /**
-     10.1 Unlike in the `CategoriesViewController`, we will be using a custom class called `ExpenseCell` to display the title of each expense and its amount. Follow the steps in the `ExpenseCell` file to create the cell.
+     9.2 Call the `configureViewController`  function.
      */
-    func configureTableView() {
-        
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
     }
     
     /**
-     10.3 Configure the tableview to display the correct data.
+     10.1 Unlike in the `CategoriesViewController`, we will be using a custom class called `ExpenseCell` to display the title of each expense and its amount. Follow the steps in the `ExpenseCell` file to create the cell.
+     11.1 Add code to `ExpensesViewController` to display the expenses using the table view.
      */
 }
