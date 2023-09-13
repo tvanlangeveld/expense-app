@@ -65,23 +65,23 @@ class CategoriesViewController: UIViewController {
     
     /**
      In the following steps, you will be adding code to do two key things:
-     - Allow the user to move from the categories screen (i.e. the `CategoriesViewController`) to the expenses screen (i.e. the `ExpensesViewController`)
-     when the user taps on a row in our table view.
+     - When the user taps on a row in our table view, allow them to move from the categories screen (i.e. the `CategoriesViewController`) to the expenses screen (i.e. the `ExpensesViewController`) using a `UINavigationController`.
      - Pass data (i.e. the category the user selected and the expenses for that category) between the view controllers.
      
      To accomplish this, you will be writing code in both files at the same time.
-      
+     
      Let's start with the first thing:
      
      7.1 Inside `CategoriesViewController`, add the function from`UITableViewDelegate` protocol that allows us to detect when the user selects a row. Print a message inside the function to confirm it is being called.
      7.2 Add code to the function to move the user to the `ExpensesViewController`. Refer to part two of the the letter finding game for a refresher on how to do that
-     7.3 Run the project and tap on a category to make sure we can transition to the next screen. **Do not move on until this works.**
+     7.3 Run the project and tap on a category to make sure we can transition to the next screen. You won't see anything on the second screen yet.
+     That's okay. We will fix that in the next step. **Do not move on moving from one screen to the next works.**
      
      Now, let's move on to the second thing:
      
      7.4 Complete step 7 in `ExpensesViewController`.
      7.5 Inside `CategoriesViewController`, modify our existing select function to use the initializer we just created. Refer to the Hacking With Swift article for an overview of how to do this.
-        Hint: Your code will be similar to the code from the author's `show` function.
+        Hint: Your code will be similar to the code in the `show` function from the article.
      */
     
     /**

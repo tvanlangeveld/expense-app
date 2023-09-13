@@ -10,11 +10,9 @@ import UIKit
 class ExpensesViewController: UIViewController {
     
     /**
-     7.4 Create a String variable for the category and an `[Expense]` variable for the expenses.
-     7.4 Create an initializer to initialize the two variables. Refer to this article for an overview of what the initializer should look like: https://www.hackingwithswift.com/example-code/uikit/how-to-use-dependency-injection-with-storyboards.
-        Hint: In the article, the author creates an initializer for his `EditUserViewController`. The initializer accepts a coder of type `NSCoder` and a `user` of type `User`.
-            Our initializer will also accept an `NSCoder` (We have to do this because we are using storyboards. Don't worry too much about this.)
-            However, instead of a  `User`, our initializer will accept a category and an array of expenses.
+     7.4 Create a String variable for the category and an `[Expense]` for the expenses.
+     7.4 Create an initializer to set the two variables. Refer to this article for an overview of what the initializer should look like: https://www.hackingwithswift.com/example-code/uikit/how-to-use-dependency-injection-with-storyboards.
+        Hint: The article creates an initializer that accepts a coder of type `NSCoder` and a user of type `User` for an `EditUserViewController`. Our initializer will also accept an `NSCoder` (We have to do this because we are using storyboards. Don't worry too much about this.). However, instead of a  `User`, our initializer will accept a category and an array of expenses.
      */
     
     /**
@@ -29,6 +27,8 @@ class ExpensesViewController: UIViewController {
     }
     
     /**
+     Do the following inside `viewDidLoad`.
+     
      9.2 Call the `configureViewController`  function.
      */
     override func viewDidLoad() {
