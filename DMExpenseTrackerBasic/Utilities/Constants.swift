@@ -10,5 +10,4 @@ import Foundation
 enum Constants {
     static let categoryReuseID = "CategoryCell"
     static let expenseReuseID = "ExpenseCell"
-    static let expensesStoryboardID = "ExpensesViewController"
 }
