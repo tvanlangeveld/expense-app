@@ -9,8 +9,16 @@ import UIKit
 
 class ExpenseCell: UITableViewCell {
     
-//    func set(expense: Expense) {
-//
-//    }
+    @IBOutlet var title: UILabel!
+    @IBOutlet var subTitle: UILabel!
+    
+    func set(expense: Expense) {
+        
+        var USD = expense.amount.formatted(.currency(code: "USD"))
+        
+        title.text = expense.title
+        subTitle.text = String(USD)
+        
+    }
     
 }

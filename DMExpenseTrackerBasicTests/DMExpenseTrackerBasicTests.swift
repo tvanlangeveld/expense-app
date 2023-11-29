@@ -33,7 +33,7 @@ final class DMExpenseTrackerBasicTests: XCTestCase {
             }
             
             let correctExpensesByCategory = Dictionary(grouping: expenses, by: { $0.category })
-            let expensesByCategory = Expense.getExpensesByCategory(expenses: expenses)
+            let expensesByCategory = Expense.getExpensesByCategory(expenses)
             
             XCTAssertEqual(expensesByCategory, correctExpensesByCategory)
         }
